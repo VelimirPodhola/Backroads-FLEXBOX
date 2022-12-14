@@ -1,0 +1,14 @@
+/*
+=================
+Variables
+=================
+*/
+
+:root {
+  /* shadegenerator.com*/
+  /* dark shades of primary color */
+  --clr-primary-1: rgb(0, 0, 217);
+  --clr-primary-2: rgb(38, 38, 255);
+  --clr-primary-3: rgb(77, 77, 255);
+  --clr-primary-4: rgb(115, 115, 255);
+}
