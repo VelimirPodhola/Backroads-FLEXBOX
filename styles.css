@@ -6,9 +6,114 @@ Variables
 
 :root {
   /* shadegenerator.com*/
-  /* dark shades of primary color */
-  --clr-primary-1: rgb(0, 0, 217);
-  --clr-primary-2: rgb(38, 38, 255);
-  --clr-primary-3: rgb(77, 77, 255);
-  --clr-primary-4: rgb(115, 115, 255);
+  /* DARK shades of primary color  */
+  --clr-primary-1: rgb(0, 0, 64);
+  --clr-primary-2: rgb(0, 0, 102);
+  --clr-primary-3: rgb(0, 0, 128);
+  --clr-primary-4: rgb(0, 0, 166);
+  /* primary/MAIN color*/
+  --clr-primary-5: rgb(0, 0, 204);
+  /* LIGHT shades of primary color */
+  --clr-primary-6: rgb(13, 13, 255);
+  --clr-primary-7: rgb(51, 51, 255);
+  --clr-primary-8: rgb(89, 89, 255);
+  --clr-primary-9: rgb(128, 128, 255);
+  /* DARK grey used for headings */
+  --clr-grey-1: rgb(19, 19, 19);
+  --clr-grey-2: rgb(32, 32, 32);
+  --clr-grey-3: rgb(38, 38, 38);
+  --clr-grey-4: rgb(58, 58, 58);
+  /* GREY used for paragraphs */
+  --clr-grey-5: rgb(70, 70, 70);
+  --clr-grey-5: rgb(83, 83, 83);
+  --clr-grey-5: rgb(96, 96, 96);
+  --clr-grey-5: rgb(109, 109, 109);
+  --clr-grey-5: rgb(122, 122, 122);
+  /* GREY/WHITE*/
+  --clr-grey-white: rgb(242, 242, 242);
+  /* other */
+  --ff-primary: 'Lato', sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+/*
+=================
+Global Styles
+=================
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--ff-primary);
+  background: var(--clr-grey-white);
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  display: block;
+}
+/* img:not(.nav-logo) {
+   width:100%;
+   display:block; */
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+  color: var(--clr-grey-5);
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
 }
